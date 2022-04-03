@@ -3,8 +3,8 @@
   position: sticky;
   top: 0;
   height: 80px;
-  max-width: 100vw;
-  min-width: 100vw;
+  width: 100%;
+  overflow: hidden;
   background-color: var(--clr-dark);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,6 +120,64 @@
   transition: all 0.3s ease-in-out;
 }
 
+.main {
+  overflow: hidden;
+  width: 100%;
+  height: 92.6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .imageContainer {
+  max-width: 100%;
+}
+
+.main .imageContainer img {
+  max-width: 100%;
+  height: 92.6vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .contentContainer {
+  max-width: 70%;
+  background: -webkit-gradient(linear, right top, left top, from(#070f10), color-stop(50%, #050b0b), color-stop(100%, #050b0b), to(#081011));
+  background: linear-gradient(to left, #070f10, #050b0b 50%, #050b0b 100%, #081011 100%);
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--clr-white);
+}
+
+.main .contentContainer h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 10px;
+}
+
+.main .contentContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.main .contentContainer p {
+  font-size: 1.4rem;
+  margin: 10px;
+}
+
 @media (max-width: 970px) {
   .header .nav__List {
     position: fixed;
@@ -179,7 +237,7 @@
 }
 
 :root {
-  --clr-dark: rgb(14, 20, 24);
+  --clr-dark: #050a0d;
   --clr-white: rgb(250, 245, 230);
   --clr-blue-lg: rgb(136, 160, 240);
   --clr-blue-dk: rgb(61, 93, 196);

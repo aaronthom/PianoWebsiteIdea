@@ -1,0 +1,80 @@
+.header {
+    position: sticky;
+    top: 0;
+    height: 8vh;
+    max-width: 100vw;
+    min-width: 100vw;
+    background-color: var(--clr-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nav {
+        max-width: 100vw;
+        min-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__LogoContainer {
+            padding: 0px 40px;
+            .logo {
+                font-size: 1.8rem;
+                font-weight: 100;
+                color: var(--clr-white);
+                text-decoration: none;
+            }
+        }
+        &__List {
+            display: flex;
+            .listItem {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 8vh;
+                margin: 0 30px;
+                width: 160px;
+                .link {
+                    font-size: 1.1rem;
+                    text-decoration: none;
+                    color: var(--clr-white);
+                }
+                .link:hover {
+                    color: var(--clr-blue-lg);
+                    transition: 300ms;
+                }
+            }
+            .listItemContact {
+                background-color: var(--clr-white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 30px;
+                height: 8vh;
+                width: 160px;
+                .link {
+                    font-size: 1.1rem;
+                    text-decoration: none;
+                    color: var(--clr-dark);
+                }
+                .link:hover {
+                    color: var(--clr-blue-dk);
+                    transition: 300ms;
+                }
+            }
+        }
+        .menuBtn {
+            display: none;
+            cursor: pointer;
+            margin-right: 50px;
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px;
+                border-radius: 5px;
+                background-color: var(--clr-white);
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}

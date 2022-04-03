@@ -1,0 +1,19 @@
+@import 'header';
+@import 'media-queries';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ruda', sans-serif;
+}
+
+
+:root {
+
+    --clr-dark: rgb(14, 20, 24);
+    --clr-white: rgb(250, 245, 230);
+    --clr-blue-lg: rgb(136, 160, 240);
+    --clr-blue-dk: rgb(61, 93, 196);
+
+}

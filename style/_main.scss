@@ -35,9 +35,14 @@
                 font-size: 2rem;
                 margin: 12px;
             }
-            p {
+            .text {
                 font-size: 1.4rem;
                 margin: 10px;
+            }
+            .quote {
+                font-size: 1.4rem;
+                margin: 10px;
+                
             }
         }
     }
@@ -112,8 +117,8 @@
 
                 .offer {
                     border: 1px solid var(--clr-white);
-                    height: 600px;
-                    width: 300px;
+                    height: 60vh;
+                    width: 30%;
                     background-color: var(--clr-dark);
                     color: var(--clr-white);
                     display: flex;
@@ -186,12 +191,13 @@
         }
 
         form {
+            width: 80%;
             input:nth-child(1) { grid-area: one; }
             input:nth-child(2) { grid-area: two; }
             input:nth-child(3) { grid-area: four; }
             textarea { 
                 grid-area: three;
-                
+                width: 100%;
                 border: 1px solid var(--clr-white);
                 background-color: var(--clr-dark);
                 color: var(--clr-white);
@@ -201,24 +207,18 @@
             display: grid;
             gap: 10px;
             grid-auto-columns: 1fr;
-            grid-template-areas:
-                "one"
-                "three"
-                "four"
-                "two";
-
             input {
                 border: 1px solid var(--clr-white);
                 background-color: var(--clr-dark);
                 color: var(--clr-white);
                 font-size: 1.6rem;
-                height: 80px;
+                height: 8vh;
                 padding: 6px;
             }
             button {
                 grid-area: five;
-                height: 50px;
-                width: 800px;
+                height: 6vh;
+                width: 100%;
                 border: none;
                 background-color: var(--clr-white);
                 color: var(--clr-dark);
@@ -231,7 +231,7 @@
                 transition: 300ms;
             }
         }
-        @media (min-width: 630px) {
+        @media (min-width: 1px) {
             form {
                 grid-template-areas:
                 "one three"

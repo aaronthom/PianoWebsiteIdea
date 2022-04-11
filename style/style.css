@@ -5,8 +5,8 @@
   height: 80px;
   width: 100%;
   overflow: hidden;
-  background: -webkit-gradient(linear, right top, left top, from(#091217), color-stop(50%, #080d10), color-stop(5%, #050b0b), color-stop(75%, #070d0d));
-  background: linear-gradient(to left, #091217, #080d10 50%, #050b0b 5%, #070d0d 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #050b0b), color-stop(75%, #070d0d));
+  background: linear-gradient(#050b0b 50%, #070d0d 75%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +177,12 @@
   margin: 12px;
 }
 
-.main #lelia .contentContainer p {
+.main #lelia .contentContainer .text {
+  font-size: 1.4rem;
+  margin: 10px;
+}
+
+.main #lelia .contentContainer .quote {
   font-size: 1.4rem;
   margin: 10px;
 }
@@ -295,8 +300,8 @@
 
 .main #pianoLessons .contentContainer .pricing .offer {
   border: 1px solid var(--clr-white);
-  height: 600px;
-  width: 300px;
+  height: 60vh;
+  width: 30%;
   background-color: var(--clr-dark);
   color: var(--clr-white);
   display: -webkit-box;
@@ -403,35 +408,28 @@
 }
 
 .main #contact form {
+  width: 80%;
   display: -ms-grid;
   display: grid;
   gap: 10px;
   grid-auto-columns: 1fr;
-      grid-template-areas: "one" "three" "four" "two";
 }
 
 .main #contact form input:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: one;
 }
 
 .main #contact form input:nth-child(2) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: two;
 }
 
 .main #contact form input:nth-child(3) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: four;
 }
 
 .main #contact form textarea {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: three;
+  width: 100%;
   border: 1px solid var(--clr-white);
   background-color: var(--clr-dark);
   color: var(--clr-white);
@@ -444,14 +442,14 @@
   background-color: var(--clr-dark);
   color: var(--clr-white);
   font-size: 1.6rem;
-  height: 80px;
+  height: 8vh;
   padding: 6px;
 }
 
 .main #contact form button {
   grid-area: five;
-  height: 50px;
-  width: 800px;
+  height: 6vh;
+  width: 100%;
   border: none;
   background-color: var(--clr-white);
   color: var(--clr-dark);
@@ -466,7 +464,7 @@
   transition: 300ms;
 }
 
-@media (min-width: 630px) {
+@media (min-width: 1px) {
   .main #contact form {
         grid-template-areas: "one three" "two three" "four three" "five five";
   }

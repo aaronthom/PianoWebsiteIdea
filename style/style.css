@@ -147,7 +147,7 @@
 
 .main #lelia .contentContainer {
   max-width: 70%;
-  background-color: var(--clr-white);
+  background-color: var(--clr-dark);
   text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,7 +159,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: var(--clr-dark);
+  color: var(--clr-white);
 }
 
 .main #lelia .contentContainer h1 {

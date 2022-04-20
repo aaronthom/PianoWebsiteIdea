@@ -25,18 +25,25 @@
             justify-content: center;
             color: var(--clr-dark);
             .notes {
+                padding: 10px;
                 i:nth-child(1) {
                     color: green;
-                    animation: movingNote 1s infinite; //TODO
+                    animation: movingNoteY 1s infinite; //TODO
                 }
                 i:nth-child(2) {
                     color: rgb(121, 162, 121);
+                    animation: movingNoteY 2s infinite;
                 }
                 i:nth-child(3) {
                     color: rgb(0, 60, 128);
+                    animation: movingNoteY 3s infinite;
                 }
                 i:nth-child(4) {
                     color: rgb(128, 23, 0);
+                    animation: movingNoteY 1.5s infinite;
+                }
+                i {
+                    padding: 10px;
                 }
             }
             h1 {

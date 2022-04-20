@@ -1,5 +1,11 @@
-@keyframes movingNote {
+@keyframes movingNoteY {
     0% { transform: translateY(0);}
     50% { transform: translateY(20%);}
-    //TODO
+    100% { transform: translateY(0);}
+}
+
+@keyframes movingNoteX {
+    0% { transform: translateX(0);}
+    50% { transform: translateX(20%);}
+    100% { transform: translateX(0);}
 }

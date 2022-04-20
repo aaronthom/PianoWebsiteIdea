@@ -488,7 +488,7 @@
 
 @media (min-width: 1px) {
   .main #contact form {
-        grid-template-areas: "one three" "two three" "four three" "five five";
+        grid-template-areas: "one three" "two three" "four three" "five five";
   }
 }
 

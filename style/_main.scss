@@ -16,6 +16,7 @@
             }
         }
         .contentContainer {
+            padding: 0px 40px;
             min-width: 70%;
             //background: linear-gradient(to left, rgba(7,15,16,255), rgba(5,11,11,255) 50%, rgba(5,11,11,255) 100%, rgba(8,16,17,255) 100%);
             background-color: var(--clr-white);
@@ -35,7 +36,7 @@
                     animation: movingNoteY 2s infinite;
                 }
                 i:nth-child(3) {
-                    color: rgb(0, 60, 128);
+                    color: var(--clr-blue-dk);
                     animation: movingNoteY 3s infinite;
                 }
                 i:nth-child(4) {
@@ -50,8 +51,8 @@
                 text-align: justify;
                 width: 496px;
                 font-size: 4rem;
-                background-color: var(--clr-blue-lg);
-                color: var(--clr-white);
+                //background-color: var(--clr-blue-lg);
+                color: var(--clr-blue-dk);
                 margin: 10px;
             }
             h2 {
@@ -86,6 +87,7 @@
         }
         .contentContainer {
             max-width: 70%;
+            padding: 0px 40px;
             //background: linear-gradient(to left, rgba(7,15,16,255), rgba(5,11,11,255) 50%, rgba(5,11,11,255) 100%, rgba(8,16,17,255) 100%);
             background-color: var(--clr-dark);
             text-align: justify;

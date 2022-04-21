@@ -8,8 +8,8 @@ hamburgerMenu.addEventListener('click', () => {
 })
 
 document.querySelectorAll('.listItem').forEach(n => n.addEventListener('click', () => {
-    hamburgerMenu.classList.remove('active');
-    navMenu.classList.remove('active');
+    hamburgerMenu.classList.add('deactive');
+    navMenu.classList.add('deactive');
 }))
 document.querySelectorAll('.listItemContact').forEach(n => n.addEventListener('click', () => {
     hamburgerMenu.classList.remove('active');

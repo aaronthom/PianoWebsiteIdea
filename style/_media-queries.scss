@@ -26,6 +26,10 @@
                     }
                 }
             }
+            &__List.deactive {
+                transition: 0.3s;
+                right: -100%;
+            }
             .menuBtn.active {
                 .bar:nth-child(1) {
                     transform: rotate(-315deg) translateY(6px);

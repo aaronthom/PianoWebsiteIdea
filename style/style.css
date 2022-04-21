@@ -149,6 +149,7 @@
 }
 
 .main #lelia .contentContainer {
+  padding: 0px 40px;
   min-width: 70%;
   background-color: var(--clr-white);
   text-align: justify;
@@ -182,7 +183,7 @@
 }
 
 .main #lelia .contentContainer .notes i:nth-child(3) {
-  color: #003c80;
+  color: var(--clr-blue-dk);
   -webkit-animation: movingNoteY 3s infinite;
           animation: movingNoteY 3s infinite;
 }
@@ -201,8 +202,7 @@
   text-align: justify;
   width: 496px;
   font-size: 4rem;
-  background-color: var(--clr-blue-lg);
-  color: var(--clr-white);
+  color: var(--clr-blue-dk);
   margin: 10px;
 }
 
@@ -249,6 +249,7 @@
 
 .main #about .contentContainer {
   max-width: 70%;
+  padding: 0px 40px;
   background-color: var(--clr-dark);
   text-align: justify;
   display: -webkit-box;
@@ -541,6 +542,11 @@
   .header .nav__List.active .listItem .link {
     color: var(--clr-dark);
   }
+  .header .nav__List.deactive {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    right: -100%;
+  }
   .header .nav .menuBtn.active .bar:nth-child(1) {
     -webkit-transform: rotate(-315deg) translateY(6px);
             transform: rotate(-315deg) translateY(6px);
@@ -633,7 +639,7 @@ html {
   --clr-dark: #050a0d;
   --clr-white: rgb(247, 244, 234);
   --clr-dark-scnd: #ffffff;
-  --clr-blue-lg: rgb(136, 160, 240);
-  --clr-blue-dk: rgb(61, 93, 196);
+  --clr-blue-lg: rgb(124, 116, 245);
+  --clr-blue-dk: rgb(81, 61, 196);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,13 @@
-@import 'header';
-@import 'main';
-@import 'media-queries';
-@import 'keyframes';
+@import "header";
+@import "main";
+@import "media-queries";
+@import "keyframes";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ruda', sans-serif;
+    font-family: "Ruda", sans-serif;
 }
 
 html {
@@ -15,11 +15,9 @@ html {
 }
 
 :root {
-
     --clr-dark: #050a0d;
     --clr-white: rgb(247, 244, 234);
     --clr-dark-scnd: #ffffff;
     --clr-blue-lg: rgb(124, 116, 245);
     --clr-blue-dk: rgb(81, 61, 196);
-
 }

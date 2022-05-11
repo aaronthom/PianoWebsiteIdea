@@ -1,3 +1,39 @@
+
+@media (max-width: 1485px) {
+    .main {
+        #pianoLessons {
+            .contentContainer {
+                .pricing {
+                    flex-direction: column;
+                    .offer {
+                        height: 30vh;
+                        width: 60%;
+                        border-radius: 4px;
+                        gap: 0px;
+                        .logo {
+                            font-size: 3rem;
+                            border: none;
+                            margin-bottom: 0px;
+                        }
+                        .text {
+
+                        }
+                        .price {
+                            margin: 6px;
+                        }
+                    }
+                    .offer:nth-child(3) {
+                        .text {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media (max-width: 970px) {
     .header {
         .nav {
@@ -33,7 +69,6 @@
             .menuBtn.active {
                 .bar:nth-child(1) {
                     transform: rotate(-315deg) translateY(6px);
-                    
                 }
                 .bar:nth-child(2) {
                     transform: rotate(315deg) translateY(-5px);
@@ -44,5 +79,7 @@
 }
 
 @media (max-width: 350px) {
-    .header { position: fixed;}
+    .header {
+        position: fixed;
+    }
 }

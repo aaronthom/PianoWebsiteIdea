@@ -338,6 +338,7 @@
 
 .main #pianoLessons .contentContainer .pricing .offer {
   border: 1px solid var(--clr-white);
+  border-radius: 2px;
   height: 60vh;
   width: 30%;
   background-color: var(--clr-dark);
@@ -508,6 +509,32 @@
   }
 }
 
+@media (max-width: 1485px) {
+  .main #pianoLessons .contentContainer .pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main #pianoLessons .contentContainer .pricing .offer {
+    height: 30vh;
+    width: 60%;
+    border-radius: 4px;
+    gap: 0px;
+  }
+  .main #pianoLessons .contentContainer .pricing .offer .logo {
+    font-size: 3rem;
+    border: none;
+    margin-bottom: 0px;
+  }
+  .main #pianoLessons .contentContainer .pricing .offer .price {
+    margin: 6px;
+  }
+  .main #pianoLessons .contentContainer .pricing .offer:nth-child(3) .text {
+    display: none;
+  }
+}
+
 @media (max-width: 970px) {
   .header .nav__List {
     position: fixed;
@@ -628,7 +655,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Ruda', sans-serif;
+  font-family: "Ruda", sans-serif;
 }
 
 html {

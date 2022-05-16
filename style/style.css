@@ -122,6 +122,50 @@
   transition: all 0.3s ease-in-out;
 }
 
+.thankyou {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thankyou .heading {
+  font-size: 4rem;
+}
+
+.thankyou i {
+  font-size: 10rem;
+  color: green;
+}
+
+.thankyou .second {
+  font-size: 2rem;
+}
+
+.thankyou .text {
+  font-size: 1.2rem;
+}
+
+.thankyou .backlink {
+  text-decoration: none;
+  color: var(--clr-blue-lg);
+}
+
+.thankyou .backlink:hover {
+  text-decoration: underline;
+}
+
 .main #lelia {
   overflow: hidden;
   width: 100%;
@@ -218,7 +262,7 @@
 }
 
 .main #lelia .contentContainer .quote {
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin: 10px;
 }
 
@@ -535,6 +579,12 @@
   }
 }
 
+@media (max-width: 1359px) {
+  .main #about .contentContainer h1 {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 970px) {
   .header .nav__List {
     position: fixed;
@@ -584,9 +634,12 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .header {
     position: fixed;
+  }
+  .thankyou .heading {
+    font-size: 2rem;
   }
 }
 

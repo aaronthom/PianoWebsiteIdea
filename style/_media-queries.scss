@@ -33,6 +33,18 @@
     }
 }
 
+@media (max-width: 1359px) {
+    .main{
+        #about {
+            .contentContainer {
+                h1 {
+                    font-size : 2rem;
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 970px) {
     .header {
@@ -78,8 +90,13 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     .header {
         position: fixed;
+    }
+    .thankyou {
+        .heading {
+            font-size: 2rem;
+        }
     }
 }

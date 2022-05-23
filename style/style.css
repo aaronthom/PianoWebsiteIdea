@@ -122,6 +122,25 @@
   transition: all 0.3s ease-in-out;
 }
 
+footer .textBox {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--clr-dark);
+}
+
+footer .textBox .text {
+  font-size: 1.2rem;
+  color: var(--clr-white);
+}
+
 .thankyou {
   height: 100vh;
   width: 100%;
@@ -437,7 +456,7 @@
 }
 
 .main #contact {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-color: var(--clr-dark);
   display: -webkit-box;
@@ -549,7 +568,7 @@
 
 @media (min-width: 1px) {
   .main #contact form {
-        grid-template-areas: "one three" "two three" "four three" "five five";
+        grid-template-areas: "one three" "two three" "four three" "five five";
   }
 }
 

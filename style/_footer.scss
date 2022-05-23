@@ -1,0 +1,15 @@
+
+footer {
+    
+    .textBox {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--clr-dark);
+        .text {
+            font-size: 1.2rem;
+            color: var(--clr-white);
+        }
+    }
+}

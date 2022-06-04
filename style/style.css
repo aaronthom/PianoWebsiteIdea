@@ -211,6 +211,10 @@ footer .textBox .text {
      object-position: 0%;
 }
 
+.main #lelia .mobileContent {
+  display: none;
+}
+
 .main #lelia .contentContainer {
   padding: 0px 40px;
   min-width: 70%;
@@ -568,7 +572,7 @@ footer .textBox .text {
 
 @media (min-width: 1px) {
   .main #contact form {
-        grid-template-areas: "one three" "two three" "four three" "five five";
+        grid-template-areas: "one three" "two three" "four three" "five five";
   }
 }
 
@@ -650,6 +654,62 @@ footer .textBox .text {
   .header .nav .menuBtn.active .bar:nth-child(2) {
     -webkit-transform: rotate(315deg) translateY(-5px);
             transform: rotate(315deg) translateY(-5px);
+  }
+}
+
+@media (max-width: 950px) {
+  .main {
+    width: 100%;
+  }
+  .main #lelia {
+    width: 100%;
+    display: block;
+  }
+  .main #lelia .imageContainer {
+    width: 100%;
+    z-index: 1;
+  }
+  .main #lelia .imageContainer video {
+    width: 100vw;
+    z-index: 1;
+    -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+  }
+  .main #lelia .mobileContent {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+  }
+  .main #lelia .mobileContent h1 {
+    color: var(--clr-blue-dk);
+    font-size: 3rem;
+  }
+  .main #lelia .mobileContent h2 {
+    color: var(--clr-white);
+    font-size: 2rem;
+  }
+  .main #lelia .mobileContent h3 {
+    color: var(--clr-white);
+  }
+  .main #lelia .mobileContent button {
+    color: var(--clr-white);
+  }
+  .main #lelia .contentContainer {
+    display: none;
   }
 }
 

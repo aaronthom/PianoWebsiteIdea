@@ -222,6 +222,9 @@
 
         form {
             width: 80%;
+            display: grid;
+            gap: 10px;
+            grid-auto-columns: 1fr;
             input:nth-child(1) {
                 grid-area: one;
             }
@@ -240,9 +243,7 @@
                 font-size: 1.6rem;
                 padding: 6px;
             }
-            display: grid;
-            gap: 10px;
-            grid-auto-columns: 1fr;
+            
             input {
                 border: 1px solid var(--clr-white);
                 background-color: var(--clr-dark);
@@ -266,15 +267,12 @@
                 color: var(--clr-white);
                 transition: 300ms;
             }
-        }
-        @media (min-width: 1px) {
-            form {
-                grid-template-areas:
-                    "one three"
-                    "two three"
-                    "four three"
-                    "five five";
-            }
+            grid-template-areas:
+                    "one"
+                    "two"
+                    "four"
+                    "three"
+                    "five";
         }
     }
 }

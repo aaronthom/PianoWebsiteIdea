@@ -16,7 +16,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header .nav {
@@ -519,21 +519,30 @@ footer .textBox .text {
   display: grid;
   gap: 10px;
   grid-auto-columns: 1fr;
+      grid-template-areas: "one" "two" "four" "three" "five";
 }
 
 .main #contact form input:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: one;
 }
 
 .main #contact form input:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: two;
 }
 
 .main #contact form input:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: four;
 }
 
 .main #contact form textarea {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: three;
   width: 100%;
   border: 1px solid var(--clr-white);
@@ -553,6 +562,8 @@ footer .textBox .text {
 }
 
 .main #contact form button {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: five;
   height: 6vh;
   width: 100%;
@@ -570,13 +581,7 @@ footer .textBox .text {
   transition: 300ms;
 }
 
-@media (min-width: 1px) {
-  .main #contact form {
-        grid-template-areas: "one three" "two three" "four three" "five five";
-  }
-}
-
-@media (max-width: 1485px) {
+@media (max-width: 1610px) {
   .main #pianoLessons .contentContainer .pricing {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -605,6 +610,12 @@ footer .textBox .text {
 @media (max-width: 1359px) {
   .main #about .contentContainer h1 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 1012px) {
+  .main #pianoLessons .imageContainer img {
+    display: none;
   }
 }
 
@@ -676,8 +687,8 @@ footer .textBox .text {
             filter: brightness(0.4);
   }
   .main #lelia .mobileContent {
-    position: absolute;
-    top: 40%;
+    position: relative;
+    top: -60%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -711,14 +722,29 @@ footer .textBox .text {
   .main #lelia .contentContainer {
     display: none;
   }
+  .main #contact .contactInfo h1 {
+    font-size: 2rem;
+  }
+  .main #contact .contactInfo .data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 400px) {
-  .header {
-    position: fixed;
+  .header .nav .nav__LogoContainer .logo {
+    font-size: 1.4rem;
   }
   .thankyou .heading {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .main #contact form {
+        grid-template-areas: "one three" "two three" "four three" "five five";
   }
 }
 

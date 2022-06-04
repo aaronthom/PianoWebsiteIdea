@@ -6,7 +6,7 @@
                     flex-direction: column;
                     .offer {
                         height: 30vh;
-                        width: 60%;
+                        width: 70%;
                         border-radius: 4px;
                         gap: 0px;
                         .logo {
@@ -49,14 +49,16 @@
             background-color: var(--clr-dark);
             flex-direction: column;
             .contentContainer {
-               display: none;
+                display: none;
             }
             .imageContainer {
                 height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 img {
-                    max-height: 100vh;
-                    width: 100%;
-                    border-radius: 400px;
+                    max-height: 90vh;
+                    width: 90%;
                     filter: brightness(0.8);
                 }
             }
@@ -74,6 +76,11 @@
             }
             .contentContainer {
                 width: 100%;
+                .pricing {
+                    .offer {
+                        width: 90%;
+                    }
+                }
             }
         }
     }
@@ -149,19 +156,22 @@
                 z-index: 2;
                 h1 {
                     color: var(--clr-blue-dk);
-                    font-size: 3rem;
+                    font-size: 4rem;
                 }
                 h2 {
                     color: var(--clr-white);
                     font-size: 2rem;
+                    margin-right: 20rem;
                 }
                 h3 {
                     color: var(--clr-white);
+                    margin-right: 13rem;
                 }
                 a {
                     background-color: var(--clr-white);
                     color: var(--clr-dark);
                     text-decoration: none;
+                    margin-top: 20px;
                     padding: 8px 26px;
                 }
             }
@@ -176,6 +186,48 @@
                 }
                 .data {
                     flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main {
+        width: 100%;
+        #lelia {
+            width: 100%;
+            display: block;
+            .imageContainer {
+                width: 100%;
+                z-index: 1;
+                video {
+                    width: 100vw;
+                    z-index: 1;
+                    filter: brightness(0.4);
+                }
+            }
+            .mobileContent {
+                h1 {
+                    color: var(--clr-blue-dk);
+                    font-size: 2.4rem;
+                    margin: 0;
+                }
+                h2 {
+                    color: var(--clr-white);
+                    font-size: 1.8rem;
+                    margin: 0;
+                }
+                h3 {
+                    color: var(--clr-white);
+                    margin: 0;
+                }
+                a {
+                    background-color: var(--clr-white);
+                    color: var(--clr-dark);
+                    text-decoration: none;
+                    margin-top: 20px;
+                    padding: 8px 26px;
                 }
             }
         }
@@ -197,6 +249,22 @@
             font-size: 2rem;
         }
     }
+    footer {
+        .textBox {
+            .text {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 358px) {
+    .main {
+        #contact {
+            
+        }
+    }
+
 }
 
 @media (min-width: 850px) {

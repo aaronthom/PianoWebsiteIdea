@@ -204,6 +204,8 @@ footer .textBox .text {
 
 .main #lelia .imageContainer video {
   width: 100%;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
@@ -310,6 +312,8 @@ footer .textBox .text {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
   -o-object-position: 20%;
      object-position: 20%;
 }
@@ -369,6 +373,8 @@ footer .textBox .text {
 .main #pianoLessons .imageContainer img {
   max-width: 100%;
   height: 100vh;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -457,6 +463,12 @@ footer .textBox .text {
 
 .main #pianoLessons .contentContainer .pricing .offer .price {
   font-size: 1.2rem;
+}
+
+.main #pianoLessons .contentContainer .pricing .offer:nth-child(2) .bestseller {
+  background-color: #f1ce42;
+  color: black;
+  padding: 2px;
 }
 
 .main #contact {
@@ -590,7 +602,7 @@ footer .textBox .text {
   }
   .main #pianoLessons .contentContainer .pricing .offer {
     height: 30vh;
-    width: 60%;
+    width: 70%;
     border-radius: 4px;
     gap: 0px;
   }
@@ -626,11 +638,19 @@ footer .textBox .text {
   }
   .main #about .imageContainer {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main #about .imageContainer img {
-    max-height: 100vh;
-    width: 100%;
-    border-radius: 400px;
+    max-height: 90vh;
+    width: 90%;
     -webkit-filter: brightness(0.8);
             filter: brightness(0.8);
   }
@@ -642,6 +662,9 @@ footer .textBox .text {
   }
   .main #pianoLessons .contentContainer {
     width: 100%;
+  }
+  .main #pianoLessons .contentContainer .pricing .offer {
+    width: 90%;
   }
 }
 
@@ -733,19 +756,22 @@ footer .textBox .text {
   }
   .main #lelia .mobileContent h1 {
     color: var(--clr-blue-dk);
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .main #lelia .mobileContent h2 {
     color: var(--clr-white);
     font-size: 2rem;
+    margin-right: 20rem;
   }
   .main #lelia .mobileContent h3 {
     color: var(--clr-white);
+    margin-right: 13rem;
   }
   .main #lelia .mobileContent a {
     background-color: var(--clr-white);
     color: var(--clr-dark);
     text-decoration: none;
+    margin-top: 20px;
     padding: 8px 26px;
   }
   .main #lelia .contentContainer {
@@ -762,12 +788,56 @@ footer .textBox .text {
   }
 }
 
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+  .main #lelia {
+    width: 100%;
+    display: block;
+  }
+  .main #lelia .imageContainer {
+    width: 100%;
+    z-index: 1;
+  }
+  .main #lelia .imageContainer video {
+    width: 100vw;
+    z-index: 1;
+    -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+  }
+  .main #lelia .mobileContent h1 {
+    color: var(--clr-blue-dk);
+    font-size: 2.4rem;
+    margin: 0;
+  }
+  .main #lelia .mobileContent h2 {
+    color: var(--clr-white);
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .main #lelia .mobileContent h3 {
+    color: var(--clr-white);
+    margin: 0;
+  }
+  .main #lelia .mobileContent a {
+    background-color: var(--clr-white);
+    color: var(--clr-dark);
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 8px 26px;
+  }
+}
+
 @media (max-width: 400px) {
   .header .nav .nav__LogoContainer .logo {
     font-size: 1.4rem;
   }
   .thankyou .heading {
     font-size: 2rem;
+  }
+  footer .textBox .text {
+    font-size: 0.9rem;
   }
 }
 

@@ -613,9 +613,35 @@ footer .textBox .text {
   }
 }
 
+@media (max-width: 1100px) {
+  .main #about {
+    background-color: var(--clr-dark);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main #about .contentContainer {
+    display: none;
+  }
+  .main #about .imageContainer {
+    height: 100vh;
+  }
+  .main #about .imageContainer img {
+    max-height: 100vh;
+    width: 100%;
+    border-radius: 400px;
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+  }
+}
+
 @media (max-width: 1012px) {
   .main #pianoLessons .imageContainer img {
     display: none;
+  }
+  .main #pianoLessons .contentContainer {
+    width: 100%;
   }
 }
 
@@ -716,8 +742,11 @@ footer .textBox .text {
   .main #lelia .mobileContent h3 {
     color: var(--clr-white);
   }
-  .main #lelia .mobileContent button {
-    color: var(--clr-white);
+  .main #lelia .mobileContent a {
+    background-color: var(--clr-white);
+    color: var(--clr-dark);
+    text-decoration: none;
+    padding: 8px 26px;
   }
   .main #lelia .contentContainer {
     display: none;

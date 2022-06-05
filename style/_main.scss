@@ -89,6 +89,9 @@
                 filter: brightness(0.8);
                 object-position: 20%;
             }
+            .mobileHeading {
+                display: none;
+            }
         }
         .contentContainer {
             max-width: 70%;

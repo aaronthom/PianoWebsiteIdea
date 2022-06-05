@@ -318,6 +318,10 @@ footer .textBox .text {
      object-position: 20%;
 }
 
+.main #about .imageContainer .mobileHeading {
+  display: none;
+}
+
 .main #about .contentContainer {
   max-width: 70%;
   padding: 0px 40px;
@@ -535,7 +539,7 @@ footer .textBox .text {
   display: grid;
   gap: 10px;
   grid-auto-columns: 1fr;
-      grid-template-areas: "one" "two" "four" "three" "five";
+      grid-template-areas: "one" "two" "four" "three" "five";
 }
 
 .main #contact form input:nth-child(1) {
@@ -642,9 +646,53 @@ footer .textBox .text {
   }
   .main #about .imageContainer {
     height: 100vh;
+    width: 100%;
+    display: block;
+  }
+  .main #about .imageContainer img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-height: 90vh;
+    width: 90%;
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+  }
+  .main #about .imageContainer .mobileHeading {
+    position: relative;
+    top: -13vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .main #about .imageContainer .mobileHeading h1 {
+    font-size: 2rem;
+  }
+  .main #about .imageContainer .mobileHeading .more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -652,14 +700,8 @@ footer .textBox .text {
         -ms-flex-align: center;
             align-items: center;
   }
-  .main #about .imageContainer img {
-    max-height: 90vh;
-    width: 90%;
-    -webkit-filter: brightness(0.8);
-            filter: brightness(0.8);
-  }
   .main #about .clickMe {
-    position: relative;
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -670,7 +712,7 @@ footer .textBox .text {
         -ms-flex-pack: center;
             justify-content: center;
     z-index: 1;
-    top: 80%;
+    top: 200vh;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -870,7 +912,7 @@ footer .textBox .text {
 
 @media (min-width: 850px) {
   .main #contact form {
-        grid-template-areas: "one three" "two three" "four three" "five five";
+        grid-template-areas: "one three" "two three" "four three" "five five";
   }
 }
 

@@ -354,6 +354,10 @@ footer .textBox .text {
   margin: 10px;
 }
 
+.main #about .clickMe {
+  display: none;
+}
+
 .main #pianoLessons {
   overflow: hidden;
   width: 100%;
@@ -531,7 +535,7 @@ footer .textBox .text {
   display: grid;
   gap: 10px;
   grid-auto-columns: 1fr;
-      grid-template-areas: "one" "two" "four" "three" "five";
+      grid-template-areas: "one" "two" "four" "three" "five";
 }
 
 .main #contact form input:nth-child(1) {
@@ -654,6 +658,28 @@ footer .textBox .text {
     -webkit-filter: brightness(0.8);
             filter: brightness(0.8);
   }
+  .main #about .clickMe {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 40px;
+    width: 100px;
+    background-color: var(--clr-white);
+    border-radius: 20px;
+    color: var(--clr-dark);
+  }
 }
 
 @media (max-width: 1012px) {
@@ -772,6 +798,7 @@ footer .textBox .text {
     color: var(--clr-dark);
     text-decoration: none;
     margin-top: 20px;
+    border-radius: 20px;
     padding: 8px 26px;
   }
   .main #lelia .contentContainer {
@@ -843,7 +870,7 @@ footer .textBox .text {
 
 @media (min-width: 850px) {
   .main #contact form {
-        grid-template-areas: "one three" "two three" "four three" "five five";
+        grid-template-areas: "one three" "two three" "four three" "five five";
   }
 }
 

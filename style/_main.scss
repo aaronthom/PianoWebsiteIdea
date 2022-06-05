@@ -116,6 +116,11 @@
                 margin: 10px;
             }
         }
+        .mobileContainer {
+        }
+        .clickMe {
+            display: none;
+        }
     }
     #pianoLessons {
         overflow: hidden;
@@ -251,7 +256,7 @@
                 font-size: 1.6rem;
                 padding: 6px;
             }
-            
+
             input {
                 border: 1px solid var(--clr-white);
                 background-color: var(--clr-dark);
@@ -276,11 +281,11 @@
                 transition: 300ms;
             }
             grid-template-areas:
-                    "one"
-                    "two"
-                    "four"
-                    "three"
-                    "five";
+                "one"
+                "two"
+                "four"
+                "three"
+                "five";
         }
     }
 }

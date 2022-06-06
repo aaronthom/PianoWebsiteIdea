@@ -91,6 +91,9 @@
             }
             .mobileHeading {
                 display: none;
+                .clickMe {
+                    display: none;
+                }
             }
         }
         .contentContainer {
@@ -120,9 +123,6 @@
             }
         }
         .mobileContainer {
-        }
-        .clickMe {
-            display: none;
         }
     }
     #pianoLessons {

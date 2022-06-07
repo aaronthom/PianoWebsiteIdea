@@ -1,6 +1,11 @@
 
 const hamburgerMenu = document.querySelector('.menuBtn');
 const navMenu = document.querySelector('.nav__List');
+const clickMe = document.querySelector('.clickMe');
+const mobileAbout = document.querySelector('.mobileContainer');
+const leliaImg = document.querySelector('.leliaImg');
+
+// header menu
 
 hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('active');
@@ -17,3 +22,8 @@ document.querySelectorAll('.listItemContact').forEach(n => n.addEventListener('c
     navMenu.classList.remove('active');
 }))
 
+// clickMe button, about
+
+clickMe.addEventListener('click', () => {
+    mobileAbout.classList.toggle('aboutActive');
+})

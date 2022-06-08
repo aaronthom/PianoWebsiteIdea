@@ -733,14 +733,49 @@ footer .textBox .text {
     border-radius: 20px;
     color: var(--clr-dark);
   }
-  .main #about .mobileContainer {
+  .main #about .imageContainer .headingActive {
     display: none;
+  }
+  .main #about .mobileContainer {
+    display: block;
     position: absolute;
     max-width: 80%;
     display: block;
     z-index: 2;
     opacity: 0;
     background-color: var(--clr-dark);
+  }
+  .main #about .mobileContainer .mobileBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 3px;
+  }
+  .main #about .mobileContainer .mobileBtn .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--clr-white);
+  }
+  .main #about .mobileContainer .mobileBtn .bar:nth-child(1) {
+    -webkit-transform: rotate(40deg) translateY(10px);
+            transform: rotate(40deg) translateY(10px);
+  }
+  .main #about .mobileContainer .mobileBtn .bar:nth-child(2) {
+    -webkit-transform: rotate(-40deg) translateY(-10px);
+            transform: rotate(-40deg) translateY(-10px);
   }
   .main #about .mobileContainer p {
     color: white;

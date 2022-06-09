@@ -149,7 +149,7 @@
                 p {
                     color: white;
                     text-align: left;
-                    font-size: 1.2rem;
+                    font-size: 2rem;
                 }
             }
             .aboutActive {
@@ -287,6 +287,18 @@
     }
 }
 
+@media (max-width: 700px) {
+    .main {
+        #about {
+            .mobileContainer {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 500px) {
     .main {
         width: 100%;
@@ -360,6 +372,7 @@
         }
     }
     footer {
+        margin-top: 30px;
         .textBox {
             .text {
                 font-size: 0.9rem;
@@ -389,6 +402,13 @@
                 textarea {
                     min-width: 70%;
                 }
+                .checkBtn {
+                    height: 22px;
+                    cursor: pointer;
+                    z-index: 3;
+                    width: 22px;
+                    min-width: 0%;
+                }
             }
         }
     }
@@ -406,7 +426,8 @@
                         h2 {
                             font-size: 0.7rem;
                         }
-                        p {text-align: center;
+                        p {
+                            text-align: center;
                             font-size: 0.7rem;
                         }
                     }
@@ -424,7 +445,7 @@
                     "one three"
                     "two three"
                     "four three"
-                    "five five";
+                    "five five"
             }
         }
     }

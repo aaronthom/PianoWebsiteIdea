@@ -543,7 +543,7 @@ footer .textBox .text {
   display: grid;
   gap: 10px;
   grid-auto-columns: 1fr;
-      grid-template-areas: "one" "two" "four" "three" "five";
+      grid-template-areas: "one" "two" "four" "three" "five";
 }
 
 .main #contact form input:nth-child(1) {
@@ -786,7 +786,7 @@ footer .textBox .text {
   .main #about .mobileContainer p {
     color: white;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   .main #about .aboutActive {
     opacity: 0.9;
@@ -928,6 +928,12 @@ footer .textBox .text {
   }
 }
 
+@media (max-width: 700px) {
+  .main #about .mobileContainer p {
+    font-size: 1.2rem;
+  }
+}
+
 @media (max-width: 500px) {
   .main {
     width: 100%;
@@ -985,6 +991,9 @@ footer .textBox .text {
   .thankyou .heading {
     font-size: 2rem;
   }
+  footer {
+    margin-top: 30px;
+  }
   footer .textBox .text {
     font-size: 0.9rem;
   }
@@ -1004,6 +1013,13 @@ footer .textBox .text {
   .main #contact form textarea {
     min-width: 70%;
   }
+  .main #contact form .checkBtn {
+    height: 22px;
+    cursor: pointer;
+    z-index: 3;
+    width: 22px;
+    min-width: 0%;
+  }
 }
 
 @media (max-width: 358px) {
@@ -1021,7 +1037,7 @@ footer .textBox .text {
 
 @media (min-width: 850px) {
   .main #contact form {
-        grid-template-areas: "one three" "two three" "four three" "five five";
+        grid-template-areas: "one three" "two three" "four three" "five five";
   }
 }
 
@@ -1095,6 +1111,7 @@ footer .textBox .text {
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--clr-dark);
 }
 
 :root {

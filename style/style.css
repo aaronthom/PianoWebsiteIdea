@@ -543,7 +543,7 @@ footer .textBox .text {
   display: grid;
   gap: 10px;
   grid-auto-columns: 1fr;
-      grid-template-areas: "one" "two" "four" "three" "five";
+      grid-template-areas: "one" "two" "four" "three" "five";
 }
 
 .main #contact form input:nth-child(1) {
@@ -785,6 +785,7 @@ footer .textBox .text {
   }
   .main #about .mobileContainer p {
     color: white;
+    text-align: left;
     font-size: 1.2rem;
   }
   .main #about .aboutActive {
@@ -989,9 +990,38 @@ footer .textBox .text {
   }
 }
 
+@media (max-width: 358px) {
+  .main #contact .contactInfo h1 {
+    text-align: center;
+  }
+  .main #contact .contactInfo .data .email {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .main #contact form input {
+    min-width: 70%;
+  }
+  .main #contact form textarea {
+    min-width: 70%;
+  }
+}
+
+@media (max-width: 358px) {
+  .main #pianoLessons .contentContainer .pricing .offer .logo {
+    font-size: 2.5rem;
+  }
+  .main #pianoLessons .contentContainer .pricing .offer h2 {
+    font-size: 0.7rem;
+  }
+  .main #pianoLessons .contentContainer .pricing .offer p {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+
 @media (min-width: 850px) {
   .main #contact form {
-        grid-template-areas: "one three" "two three" "four three" "five five";
+        grid-template-areas: "one three" "two three" "four three" "five five";
   }
 }
 

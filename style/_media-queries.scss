@@ -148,6 +148,7 @@
                 }
                 p {
                     color: white;
+                    text-align: left;
                     font-size: 1.2rem;
                 }
             }
@@ -370,6 +371,47 @@
 @media (max-width: 358px) {
     .main {
         #contact {
+            .contactInfo {
+                h1 {
+                    text-align: center;
+                }
+                .data {
+                    .email {
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+                }
+            }
+            form {
+                input {
+                    min-width: 70%;
+                }
+                textarea {
+                    min-width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 358px) {
+    .main {
+        #pianoLessons {
+            .contentContainer {
+                .pricing {
+                    .offer {
+                        .logo {
+                            font-size: 2.5rem;
+                        }
+                        h2 {
+                            font-size: 0.7rem;
+                        }
+                        p {text-align: center;
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }

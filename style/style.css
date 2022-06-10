@@ -484,7 +484,7 @@ footer .textBox .text {
 }
 
 .main #contact {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-color: var(--clr-dark);
   display: -webkit-box;
@@ -583,6 +583,20 @@ footer .textBox .text {
   font-size: 1.6rem;
   height: 8vh;
   padding: 6px;
+}
+
+.main #contact form .checkBtn {
+  height: 22px;
+  cursor: pointer;
+  z-index: 3;
+  width: 22px;
+  min-width: 0%;
+}
+
+.main #contact form .dataSafety {
+  color: var(--clr-white);
+  -webkit-transform: translateX(-95%);
+          transform: translateX(-95%);
 }
 
 .main #contact form button {
@@ -928,8 +942,23 @@ footer .textBox .text {
   }
 }
 
+@media (max-width: 850px) {
+  .main #contact form .dataSafety {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 @media (max-width: 700px) {
   .main #about .mobileContainer p {
+    font-size: 1.2rem;
+  }
+  .main #contact .contactInfo h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20%;
+  }
+  .main #contact .contactInfo .data .email {
     font-size: 1.2rem;
   }
 }
@@ -982,6 +1011,15 @@ footer .textBox .text {
   .main #about .imageContainer .mobileHeading .clickMe {
     top: 120px;
   }
+  .main #contact form .dataSafety {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-height: 721px) {
+  .main #contact form .dataSafety {
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -992,7 +1030,7 @@ footer .textBox .text {
     font-size: 2rem;
   }
   footer {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   footer .textBox .text {
     font-size: 0.9rem;
@@ -1111,6 +1149,9 @@ footer .textBox .text {
 
 html {
   scroll-behavior: smooth;
+}
+
+.firstBody {
   background-color: var(--clr-dark);
 }
 
